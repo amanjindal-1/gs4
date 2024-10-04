@@ -32,7 +32,7 @@ const HeroSection = () => {
   return (
     <section className="flex gap-6 items-center mb-32 my-16 flex-col lg:flex-row">
       <div className="text-[#0D160B]">
-        <div className=" font-semibold text-5xl mb-4">
+        <div className="font-semibold text-5xl mb-4">
           Welcome to{" "}
           <span className="text-[#C59363]">GS4 Legal Services LLP</span>
         </div>

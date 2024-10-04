@@ -1,3 +1,4 @@
+import AboutUs from "@/components/AboutUs";
 import { CarouselComponent } from "@/components/CarouselComponent";
 import ContactSection from "@/components/ContactUs/ContactSection";
 import Container from "@/components/Container";
@@ -36,9 +37,9 @@ const ContactButton = () => {
 export default function Home() {
   return (
     <main className="items-center justify-items-center min-h-screen">
-     
       <Container>
         <HeroSection />
+        {/* <AboutUs /> */}
       </Container>
       <div className="bg-[#C59363] w-full">
         <Container>
@@ -61,7 +62,6 @@ export default function Home() {
         </div>
       </Container>
       <ContactSection />
-      
     </main>
   );
 }

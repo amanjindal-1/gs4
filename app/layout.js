@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Container from "@/components/Container";
 import { Toaster } from "sonner";
+import MobileNavbar from "@/components/MobileNavbar";
 
 export const metadata = {
   title: "GS4 Legal Services LLP",
@@ -12,9 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`antialiased relative`}>
+      <body className={`antialiased relative min-w-[400px]`}>
         <div className="w-full flex justify-center sticky top-0 z-10">
           <Navbar />
+          <MobileNavbar />
         </div>
         {children}
         <Container>

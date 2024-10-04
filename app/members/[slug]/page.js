@@ -67,7 +67,7 @@ const page = ({ params }) => {
   return (
     <section>
       <Container>
-        <div className="flex justify-between my-[120px] gap-6">
+        <div className="flex justify-between my-[120px] gap-6 flex-col lg:flex-row">
           <div>
             <div
               className="h-[509px] w-[453px] rounded-2xl"

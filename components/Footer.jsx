@@ -23,13 +23,13 @@ export default function Footer() {
           <h4 className="font-medium">Quick Links</h4>
           <ul className="mt-2 text-[#C59363b2]">
             <li>
-              <a href="/about" className="hover:underline">
+              <a href="/#about" className="hover:underline">
                 About Us
               </a>
             </li>
             <li>
-              <a href="/services" className="hover:underline">
-                Services
+              <a href="/contact" className="hover:underline">
+                Contact Us
               </a>
             </li>
           </ul>

@@ -18,12 +18,12 @@ const Navbar = () => {
   };
   return (
     <nav
-      className="py-6 px-8 bg-[#FDFFFC] rounded-b-[16px] text-[#C59363] font-medium"
+      className="py-6 px-8 hidden sm:block bg-[#FDFFFC] rounded-b-[16px] text-[#C59363] font-medium"
       style={{
         boxShadow: "0px 0px 40px 0px rgba(0, 0, 0, 0.14)",
       }}
     >
-      <div className="ml-2 flex gap-12 items-center">
+      <div className="ml-2 flex gap-12 items-center w-max">
         <Link href="/" className="text-lg hover:text-[#0D160B]">
           Home
         </Link>
