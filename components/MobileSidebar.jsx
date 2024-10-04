@@ -35,7 +35,7 @@ const MobileSidebar = ({ isOpen, onClose }) => {
             Home
           </a>
           <a
-            href="/#about"
+            href="/about"
             onClick={onClose}
             className="py-2 hover:text-[#0D160B]"
           >
@@ -85,7 +85,7 @@ const MobileSidebar = ({ isOpen, onClose }) => {
             <div className="pl-4">
               {services.map((item, index) => (
                 <p key={index}>
-                  <Link href={`/members/${item.id}`} onClick={onClose}>
+                  <Link href={`/services/${item.id}`} onClick={onClose}>
                     {item.title}
                   </Link>
                 </p>

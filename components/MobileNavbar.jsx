@@ -8,7 +8,7 @@ const MobileNavbar = () => {
   const [menu, setMenu] = useState(false);
   return (
     <nav
-      className="py-4 px-8 w-full bg-white sm:hidden"
+      className="py-4 px-8 w-full bg-white sm:hidden mb-10"
       style={{
         boxShadow: "0px 0px 40px 0px rgba(0, 0, 0, 0.14)",
       }}
