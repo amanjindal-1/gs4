@@ -21,7 +21,7 @@ const AboutUs = () => {
           <p className="mb-4 text-lg">
             Our approach combines traditional legal wisdom with innovative
             strategies to provide practical and effective solutions, ensuring
-            our client's success and protection in an ever-evolving legal
+            our clients success and protection in an ever-evolving legal
             landscape. Whether you are seeking advice, representation, or
             long-term legal support, GS4 Legal Services LLP is your trusted
             partner in navigating complex legal challenges. We are committed to
