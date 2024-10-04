@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Container from "@/components/Container";
+import { Toaster } from "sonner";
 
 export const metadata = {
   title: "GS4 Legal Services LLP",
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
             © 2024 GS4 Legal Services LLP. All rights reserved.
           </p>
         </div>
+        <Toaster />
       </body>
     </html>
   );

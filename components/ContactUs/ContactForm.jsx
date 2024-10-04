@@ -1,8 +1,10 @@
 "use client";
 
-import { useForm } from "react-hook-form";
-import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import emailjs from "emailjs-com";
+import { useForm } from "react-hook-form";
+import { toast } from "sonner";
+import { z } from "zod";
 
 const contactSchema = z.object({
   name: z.string().min(1, { message: "Name is required" }),
@@ -22,13 +24,31 @@ const ContactForm = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm({
     resolver: zodResolver(contactSchema),
   });
 
   const onSubmit = (data) => {
-    console.log(data);
-    // Handle the form submission logic here
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        data,
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully:", response);
+          toast.success("Your enquiry has been sent successfully!", {
+            duration: 3000,
+          });
+          reset();
+        },
+        (err) => {
+          console.error("Failed to send email:", err);
+        }
+      );
   };
 
   return (
