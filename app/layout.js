@@ -1,13 +1,7 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
-import { DM_Sans } from "@next/font/google";
 import Footer from "@/components/Footer";
 import Container from "@/components/Container";
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  weights: ["400", "500", "700"],
-});
 
 export const metadata = {
   title: "GS4 Legal Services LLP",
@@ -17,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`antialiased relative ${dmSans.className}`}>
+      <body className={`antialiased relative`}>
         <div className="w-full flex justify-center sticky top-0 z-10">
           <Navbar />
         </div>

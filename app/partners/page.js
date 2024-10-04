@@ -1,6 +1,6 @@
 import MemberCard from "@/components/Cards/MemberCard";
 import Container from "@/components/Container";
-import { partners } from "@/utils/constant";
+import { partners } from "@/lib/constant";
 
 const page = () => {
   return (

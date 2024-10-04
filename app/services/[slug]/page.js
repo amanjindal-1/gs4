@@ -1,7 +1,8 @@
 import { CarouselComponent } from "@/components/CarouselComponent";
 import ContactSection from "@/components/ContactUs/ContactSection";
 import Container from "@/components/Container";
-import { services } from "@/utils/constant";
+import { services } from "@/lib/constant";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
 const page = ({ params }) => {
@@ -26,11 +27,12 @@ const page = ({ params }) => {
   return (
     <div className="mt-[450px]">
       <div
-        className="w-full h-[500px] flex justify-center items-center text-white text-5xl font-bold gap-4 absolute top-0"
+        className="w-full h-[500px] flex justify-center flex-col text-center md:flex-row items-center text-white text-5xl font-bold gap-4 absolute top-0"
         style={{
-          background: `linear-gradient(0deg, rgba(197, 147, 99, 0.35) 0%, rgba(197, 147, 99, 0.35) 100%), url(${matchedService.image})`,
+          background: `linear-gradient(0deg, rgba(197, 147, 99, 0.35) 0%, rgba(197, 147, 99, 0.35) 100%), url(${matchedService.img1.src})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         {matchedService.icon}
@@ -38,17 +40,27 @@ const page = ({ params }) => {
       </div>
       <Container>
         <div className="flex gap-6 mb-[120px] items-center flex-col lg:flex-row">
-          <div className="text-[#3D453B] text-2xl font-medium">
+          <div className="text-[#3D453B] text-2xl font-medium flex-1">
             {matchedService.description}
           </div>
-          <div className="h-[360px] min-w-[548px] rounded-2xl border" />
+          <Image
+            src={matchedService.img2}
+            alt="img"
+            className="rounded-2xl overflow-hidden flex-1"
+          />
         </div>
-        <div className="flex gap-6 mb-[120px] items-center  flex-col-reverse lg:flex-row">
-          <div className="h-[360px] min-w-[548px] rounded-2xl border" />
-          <div className="text-[#3D453B] text-2xl font-medium">
-            {matchedService.description}
+        {matchedService.description1 && (
+          <div className="flex gap-6 mb-[120px] items-center  flex-col-reverse lg:flex-row">
+            <Image
+              src={matchedService.img3}
+              alt="img"
+              className="rounded-2xl overflow-hidden flex-1"
+            />
+            <div className="text-[#3D453B] text-2xl font-medium flex-1">
+              {matchedService.description1}
+            </div>
           </div>
-        </div>
+        )}
       </Container>
       <div className="w-full border-b border-[#C59363]" />
       <Container>

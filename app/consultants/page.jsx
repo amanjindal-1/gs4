@@ -1,6 +1,6 @@
 import MemberCard from "@/components/Cards/MemberCard";
 import Container from "@/components/Container";
-import { consultants } from "@/utils/constant";
+import { consultants } from "@/lib/constant";
 
 const page = () => {
   return (

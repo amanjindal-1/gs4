@@ -1,7 +1,7 @@
 import { CarouselComponent } from "@/components/CarouselComponent";
 import ContactSection from "@/components/ContactUs/ContactSection";
 import Container from "@/components/Container";
-import { consultants, partners } from "@/utils/constant";
+import { consultants, partners } from "@/lib/constant";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 

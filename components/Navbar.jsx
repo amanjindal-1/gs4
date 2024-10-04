@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Logo from "@/public/Logo";
 import { useState } from "react";
-import { services } from "@/utils/constant";
+import { services } from "@/lib/constant";
 
 const Navbar = () => {
   const [membersOpen, setMembersOpen] = useState(false);

@@ -29,29 +29,13 @@ export function CarouselComponent({ title, items, card, black }) {
     }
   }, [api]);
 
-  const handleNext = () => {
-    if (current === items.length - 1) {
-      api.scrollTo(0); // Scroll to the first item
-    } else {
-      api.scrollNext();
-    }
-  };
-
-  const handlePrev = () => {
-    if (current === 0) {
-      api.scrollTo(items.length - 1); // Scroll to the last item
-    } else {
-      api.scrollPrev();
-    }
-  };
-
   return (
     <div className="relative py-10 md:py-16">
       <div className="w-full flex items-center justify-between gap-2.5 pb-12 text-4xl font-bold">
         <h3>{title}</h3>
         <div className="flex gap-2.5">
           <button
-            onClick={handlePrev}
+            onClick={() => api.scrollPrev()}
             className={`flex items-center justify-center h-10 w-10 rounded-full transition duration-200 ${
               black ? "hover:bg-[#c592637e]" : "hover:bg-black"
             }`}
@@ -59,7 +43,7 @@ export function CarouselComponent({ title, items, card, black }) {
             <Arrow {...(black ? { color: "#000" } : {})} />
           </button>
           <button
-            onClick={handleNext}
+            onClick={() => api.scrollNext()}
             className={`flex items-center justify-center h-10 w-10 rounded-full transition duration-200 rotate-180 ${
               black ? "hover:bg-[#c592637e]" : "hover:bg-black"
             }`}

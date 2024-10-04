@@ -2,7 +2,7 @@ import { CarouselComponent } from "@/components/CarouselComponent";
 import ContactSection from "@/components/ContactUs/ContactSection";
 import Container from "@/components/Container";
 import HeroSection from "@/components/HeroSection";
-import { consultants, services } from "@/utils/constant";
+import { consultants, services } from "@/lib/constant";
 import Link from "next/link";
 
 const ContactButton = () => {
