@@ -34,9 +34,9 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="hidden md:block border-l-[1px] h-[160px] border-l-[#C59363b2]" />
-        <div className="my-4 border-b-[1px] border-b-[#C59363b2] w-full md:hidden" />
-        <div className="text-center lg:text-right">
+        {/* <div className="hidden md:block border-l-[1px] h-[160px] border-l-[#C59363b2]" /> */}
+        {/* <div className="my-4 border-b-[1px] border-b-[#C59363b2] w-full md:hidden" /> */}
+        {/* <div className="text-center lg:text-right">
           <div className="flex justify-center lg:justify-end space-x-4">
             <a
               href="https://www.linkedin.com"
@@ -60,7 +60,7 @@ export default function Footer() {
               <Image src={X} alt="X (formerly Twitter)" className="w-6 h-6" />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

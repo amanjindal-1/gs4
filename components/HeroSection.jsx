@@ -43,7 +43,17 @@ const HeroSection = () => {
         </p>
         <ContactButton />
       </div>
-      <div className="hidden md:block min-w-full lg:min-w-[548px] h-[360px] border"></div>
+      <div className="hidden md:block min-w-full lg:min-w-[548px] h-[360px] border">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          title="Home Page Video"
+        >
+          <source src="/video/home.mp4" type="video/mp4" />
+        </video>
+      </div>
     </section>
   );
 };

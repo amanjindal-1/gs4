@@ -4,14 +4,13 @@ import Location from "@/public/location.svg";
 import Mail from "@/public/mail.svg";
 import { Phone } from "lucide-react";
 import Image from "next/image";
-import Bitmap from "@/public/Bitmap.svg";
 
 const page = () => {
   return (
     <section>
       <Container className1="my-[60px]">
         <div className="flex justify-between items-center flex-col gap-10 lg:flex-row lg:gap-6">
-          <div className="text-[#3D453B] text-xl w-[450px]">
+          <div className="text-[#3D453B] text-xl flex-1">
             <h1 className="text-[#C59363] text-[32px] font-semibold mb-2">
               Need any help?
             </h1>
@@ -59,14 +58,22 @@ const page = () => {
               </div>
             </div>
           </div>
-          <ContactForm />
+          <div className="flex-1 w-full">
+            <ContactForm />
+          </div>
         </div>
       </Container>
-      <Image
-        src={Bitmap}
-        alt="map"
-        className="w-full h-[719px] object-cover mb-6"
-      />
+      <div className="w-full h-[719px] mb-16">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.544946634117!2d77.36088427613663!3d28.61342528494697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce569d1c10323%3A0x9f642a7c1cafd45d!2sTechnopolis%20IT%20Hub!5e0!3m2!1sen!2sin!4v1727430984629!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          title="Google Map"
+        />
+      </div>
     </section>
   );
 };

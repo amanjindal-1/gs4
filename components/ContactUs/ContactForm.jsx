@@ -32,10 +32,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className="w-full">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="bg-white p-9 rounded-lg shadow-lg w-full max-w-md"
+        className="bg-white p-9 rounded-lg shadow-lg w-auto max-w-md"
         style={{ minWidth: "max-content" }}
       >
         <h2 className="text-2xl font-semibold text-[#C59363] mb-6">
