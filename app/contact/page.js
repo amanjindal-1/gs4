@@ -9,7 +9,7 @@ const page = () => {
   return (
     <section>
       <Container className1="my-[60px]">
-        <div className="flex justify-between items-center flex-col gap-10 lg:flex-row lg:gap-6">
+        <div className="flex justify-between items-center flex-col-reverse gap-10 lg:flex-row lg:gap-6">
           <div className="text-[#3D453B] text-xl flex-1">
             <h1 className="text-[#C59363] text-[32px] font-semibold mb-2">
               Need any help?
@@ -41,7 +41,9 @@ const page = () => {
                 <div className="text-[rgba(13, 22, 11, 0.80)] font-semibold">
                   Email us
                 </div>
-                <div>gs4legalservicesllp@gmail.com</div>
+                <div style={{ wordBreak: "break-all" }}>
+                  gs4legalservicesllp@gmail.com
+                </div>
               </div>
             </div>
             <div className="flex gap-6 items-center">
