@@ -24,7 +24,7 @@ const Navbar = () => {
       }}
     >
       <div className="ml-2 flex gap-12 items-center w-max">
-        <Link href="/" className="text-lg hover:text-[#0D160B]">
+        <Link href="/" className="text-lg hover:text-[#89613b]">
           Home
         </Link>
         <div
@@ -32,7 +32,7 @@ const Navbar = () => {
           onMouseEnter={handleMembersToggle}
           onMouseLeave={handleMembersToggle}
         >
-          <button className="text-lg hover:text-[#0D160B]">Members</button>
+          <button className="text-lg hover:text-[#89613b]">Members</button>
           {membersOpen && (
             <div className="absolute top-full left-0 bg-[#FDFFFC] rounded shadow-lg overflow-hidden">
               <Link
@@ -58,7 +58,7 @@ const Navbar = () => {
           onMouseEnter={handleServicesToggle}
           onMouseLeave={handleServicesToggle}
         >
-          <button className="text-lg hover:text-[#C59363]">Services</button>
+          <button className="text-lg hover:text-[#89613b]">Services</button>
           {servicesOpen && (
             <div
               className="absolute top-[24px] left-0 bg-[#FDFFFC] overflow-hidden rounded shadow-lg transition-opacity duration-300 ease-in-out opacity-100"
@@ -77,7 +77,7 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <Link href="/contact" className="text-lg hover:text-[#0D160B]">
+        <Link href="/contact" className="text-lg hover:text-[#89613b]">
           Contact Us
         </Link>
       </div>

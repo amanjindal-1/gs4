@@ -35,7 +35,7 @@ const page = ({ params }) => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        {matchedService.icon}
+        {/* {matchedService.icon} */}
         <div>{matchedService.title}</div>
       </div>
       <Container>
@@ -54,7 +54,7 @@ const page = ({ params }) => {
             <Image
               src={matchedService.img3}
               alt="img"
-              className="rounded-2xl overflow-hidden flex-1"
+              className="rounded-2xl overflow-hidden flex-1 max-h-[400px]"
             />
             <div className="text-[#3D453B] text-2xl font-medium flex-1">
               {matchedService.description1}
