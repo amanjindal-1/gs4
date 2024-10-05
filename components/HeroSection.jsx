@@ -43,7 +43,7 @@ const HeroSection = () => {
         </p>
         <ContactButton />
       </div>
-      <div className="hidden md:block min-w-full lg:min-w-[548px] h-[360px] border">
+      <div className="hidden md:block min-w-full lg:min-w-[548px] h-[360px] border rounded-xl overflow-hidden">
         <video
           className="w-full h-full object-cover"
           autoPlay

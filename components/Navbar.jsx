@@ -18,7 +18,7 @@ const Navbar = () => {
   };
   return (
     <nav
-      className="py-6 px-8 hidden sm:block bg-[#FDFFFC] rounded-b-[16px] text-[#C59363] font-medium"
+      className="py-6 px-8 hidden sm:block bg-[#FDFFFC] rounded-b-[16px] text-[#C59363] font-medium z-10"
       style={{
         boxShadow: "0px 0px 40px 0px rgba(0, 0, 0, 0.14)",
       }}
