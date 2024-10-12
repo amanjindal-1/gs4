@@ -50,9 +50,7 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <Link href="/" className="flex items-center">
-          <Logo color="#C59363" />
-        </Link>
+        <Logo color="#C59363" />
         <div
           className="relative"
           onMouseEnter={handleServicesToggle}
